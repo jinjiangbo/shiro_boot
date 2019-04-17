@@ -20,6 +20,7 @@ public class UserController {
             return "index";
         }catch (IncorrectCredentialsException e){
             System.out.println("密码错误！");
+            System.out.println("=======================");
             return "redirect:/user/login.jsp";
         }catch (UnknownAccountException e){
             System.out.println("账号错误！");
